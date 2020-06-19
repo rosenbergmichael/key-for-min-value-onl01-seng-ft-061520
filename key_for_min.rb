@@ -4,13 +4,14 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   minimum = 1000
-  key = 
+  key = ""
   name_hash.each do |name, number|
-    if number < minimum 
-    minimum = number
- end 
- minimum 
- end
+      if number < minimum 
+        minimum = number
+        key = name 
+      end 
+  end
+  key
 end 
 
 
